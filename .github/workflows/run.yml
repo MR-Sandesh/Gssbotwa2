@@ -29,5 +29,11 @@ jobs:
     - name: Install dependencies
       run: npm install
 
+      - name: npm install
+      run: npm i @whiskeysockets/baileys
+
     - name: Start application
+      run: npm start
+
+      - name: Start application
       run: npm start
