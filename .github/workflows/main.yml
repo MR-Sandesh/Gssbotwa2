@@ -27,13 +27,7 @@ jobs:
         node-version: ${{ matrix.node-version }}
 
     - name: Install dependencies
-      run: npm install
-
-      - name: npm asdhuciudhcxsa
       run: npm i @whiskeysockets/baileys
 
     - name: Start application
-      run: npm start
-
-      - name: Start application
-      run: npm start
+      run: npm install && npm start
