@@ -241,23 +241,6 @@ gss.ev.on('messages.update', async chatUpdate => {
 
  
 
-/*WELCOME LEFT*/
-gss.ev.on('group-participants.update', async (anu) => {
-    if (global.welcome) {
-        console.log(anu);
-        try {
-            let metadata = await gss.groupMetadata(anu.id);
-            let participants = anu.participants;
-
-            for (let num of participants) {
-                try {
-                    ppuser = await gss.profilePictureUrl(num, 'image');
-                } catch (err) {
-                    ppuser = 'https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png?q=60';
-                }
-
-                
-	
     // Setting
     gss.decodeJid = (jid) => {
         if (!jid) return jid
