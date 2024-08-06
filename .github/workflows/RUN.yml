@@ -14,8 +14,8 @@ jobs:
     runs-on: ubuntu-latest
 
     strategy:
-      hansamala:
-        node-version: [22.5.1]
+      matrix:
+        node-version: [20.x]
 
     steps:
     - name: Checkout repository
@@ -24,7 +24,7 @@ jobs:
     - name: Set up Node.js
       uses: actions/setup-node@v3
       with:
-        node-version: ${{ hansamala.node-version }}
+        node-version: ${{ matrix.node-version }}
 
     - name: Install dependencies
       run: npm install
