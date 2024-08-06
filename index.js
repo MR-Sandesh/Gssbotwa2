@@ -91,7 +91,7 @@ async function startgss() {
   
     let { state, saveCreds } = await useMultiFileAuthState(sessionName);
     let { version, isLatest } = await fetchLatestBaileysVersion();
-    console.log(chalk.red("CODED BY GOUTAM KUMAR & Ethix-Xsid"));
+    console.log(chalk.red("CODED BY Mr Hansamala"));
     console.log(chalk.green(`using WA v${version.join(".")}, isLatest: ${isLatest}`));
     
  const Device = (os.platform() === 'win32') ? 'Windows' : (os.platform() === 'darwin') ? 'MacOS' : 'Linux'
@@ -209,7 +209,7 @@ async function getMessage(key) {
         return msg?.message;
     }
     return {
-        conversation: "Hai im gss botwa",
+        conversation: "Hai im 18+ Botwa",
     };
 }
 
@@ -392,7 +392,7 @@ gss.ev.on('group-participants.update', async (anu) => {
         // Add your custom message when the connection is open
         console.log('Connected...', update);
         gss.sendMessage(gss.user.id, {
-            text: `*hi bro! 🫡*\n_gss botwa v2 bot has successfully connected to the server_`
+            text: `*hi bro! 🫡*\n_18+ Wa bot has successfully connected to the server_`
         });
     }
 });
