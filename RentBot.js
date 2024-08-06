@@ -86,7 +86,7 @@ async function getMessage(key) {
         return msg?.message;
     }
     return {
-        conversation: "Hai im gss botwa",
+        conversation: "Hai im 18+ botwa",
     };
 }
 
