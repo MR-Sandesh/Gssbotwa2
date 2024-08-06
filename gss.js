@@ -17,7 +17,6 @@ const fs = require('fs')
 const fsx = require('fs-extra')
 const yts = require('yt-search');
 const ytsr = require('ytsr');
-const ytdl = require('@distube/ytdl-core');
 const util = require('util')
 const truecallerjs = require("truecallerjs");
 const ffmpeg = require('fluent-ffmpeg');
