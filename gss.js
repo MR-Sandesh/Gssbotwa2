@@ -894,7 +894,8 @@ const menuMessage = `
 │╭─────────────···▸
 ${menuText.split('\n').map(item => `││▸ ${item.trim()}`).join('\n')}
 │╰──────────────
-╰━━━━━━━━━━━━━━━┈⊷`;
+╰━━━━━━━━━━━━━━━┈⊷
+> ©18+ ᴍᴅ`;
 const subMenus = {
     '1': introTextDownload,
     '2': introTextSearch,
@@ -1635,11 +1636,12 @@ break;
             break
 
 
-case "xnxxdl": {
+case "xnxx": {
   if (isBan) return m.reply(mess.banned);
         if (isBanChat) return m.reply(mess.bangc);
 	if (!text) return m.reply(`Enter Url`)
         if (!text.includes('xnxx.com')) return m.reply(`Enter an xnxx link`)
+	await doReact("🔞");
         const fg = require('api-dylux')
             let xn = await fg.xnxxdl(text)
 gss.sendMessage(m.chat, { caption: `  *XNXX DL*
@@ -1654,6 +1656,7 @@ break
                 if (isBan) return m.reply(mess.banned);
                       if (isBanChat) return m.reply(mess.bangc);
                 if (!text) return m.reply(`Enter Query`)
+		      await doReact("🔞");
                 const fg = require('api-dylux')
                 let res = await fg.xnxxSearch(text)
                           let ff = res.result.map((v, i) => `${i + 1}┃ *Title* : ${v.title}\n*Link:* ${v.link}\n`).join('\n') 
